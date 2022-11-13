@@ -36,6 +36,14 @@
                         <th>Correo</th>
                         <th>Telefono</th>
                         <th>Comentario</th>
+                        <th >
+                        <a href="script.js:like_dislike(0);"> 
+                            <img src="img/Like.png" alt="Like" height="25px"> 
+                        </a> 
+                        <a href="#" onclick="script.js:like_dislike(1); return false;"> 
+                            <img src="img/Dislike.png" alt="Dislike" height="25px"> 
+                        </a>
+                        </th>
                         <th>Acción</th>
                     </tr>
                 </thead>
@@ -60,6 +68,9 @@
                             </td>
                             <td>
                                 <?php echo $row['Comentario']; ?>
+                            </td>
+                            <td>
+                                <?php echo $row['Tipo']; ?>
                             </td>
                             <td>
                                 <a href="edit.php?idcomentario=<?php echo $row['idComentario'] ?>">Editar</a>

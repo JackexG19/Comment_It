@@ -68,6 +68,19 @@
                         <th>Correo</th>
                         <th>Telefono</th>
                         <th>Comentario</th>
+                        <th> 
+
+                            <img src="img/Like.png" alt="Like" height="25px"> 
+                            <img src="img/Dislike.png" alt="Dislike" height="25px"> 
+                        
+                        <!-- <a href="index.php?1"> 
+                            <img src="img/Like.png" alt="Like" height="25px"> 
+                        </a> 
+                        <a href="index.php?2"> 
+                            <img src="img/Dislike.png" alt="Dislike" height="25px"> 
+                        </a> -->
+
+                        </th>
                         <th>Acción</th>
                     </tr>
                 </thead>
@@ -91,6 +104,9 @@
                             </td>
                             <td>
                                 <?php echo $row['Comentario']; ?>
+                            </td>
+                            <td>
+                                <?php echo $row['Tipo']; ?> <!-- Ponerle "Tipo" en BD -->
                             </td>
                             <td>
                                 <a href="edit.php?idcomentario=<?php echo $row['idComentario'] ?>">Editar</a>
