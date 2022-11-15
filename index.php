@@ -39,6 +39,7 @@
                             </div>
                             
                             <input type="submit" class="btn btn-success btn block col-12 mx-auto boto" name='save' value="ENVIAR">    
+                            <input type="hidden" name='tipo' value="1">    
                             
                         </form>
                     </div>
@@ -68,18 +69,13 @@
                         <th>Correo</th>
                         <th>Telefono</th>
                         <th>Comentario</th>
-                        <th> 
-
-                            <img src="img/Like.png" alt="Like" height="25px"> 
-                            <img src="img/Dislike.png" alt="Dislike" height="25px"> 
-                        
-                        <!-- <a href="index.php?1"> 
+                        <th>             
+                        <a onclick="like_dislike(0);"> 
                             <img src="img/Like.png" alt="Like" height="25px"> 
                         </a> 
-                        <a href="index.php?2"> 
+                        <a onclick="like_dislike(1);"> 
                             <img src="img/Dislike.png" alt="Dislike" height="25px"> 
-                        </a> -->
-
+                        </a> 
                         </th>
                         <th>Acción</th>
                     </tr>

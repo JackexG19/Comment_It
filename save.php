@@ -7,8 +7,9 @@ if(isset($_POST['save'])) { //si existe save, guardar en cada variable los datos
     $correo=$_POST['correo'];
     $telefono=$_POST['telefono']; 
     $comentario=$_POST['comentario'];
+    $tipo=$_POST['tipo'];
 
-    $query="INSERT INTO comentarios(idProducto, Correo, Telefono, Comentario) VALUES ('$idproducto', '$correo', '$telefono', '$comentario')"; //guardo cada variable en la tabla usuario de mi base de datos
+    $query="INSERT INTO comentarios(idProducto, Correo, Telefono, Comentario, Tipo) VALUES ('$idproducto', '$correo', '$telefono', '$comentario', '$tipo')"; //guardo cada variable en la tabla usuario de mi base de datos
     $result=mysqli_query($conn, $query); 
 
     if (!$result) { //si result no es cierto dar un mensaje de fail

@@ -1,4 +1,6 @@
 function like_dislike(decide){
+
+
 if (decide==0){
 
                 if(isset($_POST['search'])) {
@@ -64,4 +66,8 @@ if (decide==0){
             
             }} 
 }   
+}
+
+function suma() {
+    alert("Estoy sumando aaaaaaaaaa");
 }
